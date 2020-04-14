@@ -16,5 +16,8 @@ mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true, useCreat
 const userRoutes = require('./routes/userAPI');
 app.use('/api/v1', userRoutes);
 
+const exerRoutes = require('./routes/exerciseAPI');
+app.use('/api/v1', exerRoutes);
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`listen to port ${port}`));
