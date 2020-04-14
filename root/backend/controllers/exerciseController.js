@@ -79,16 +79,3 @@ module.exports = {
   update_exercise,
   delete_exercise
 }
-
-// exports.insert = async function(req, res){
-//   let muncity = new Municipality();
-//   muncity.setName(req.body.name);
-// try{
-//   await muncityAPI.insert_municipality(muncity);
-//   // or assign variable if naay parameter ang resolve
-//   return res.status(200).send("blah blah")
-// } catch(err) {
-//   // Ari musulod if reject
-//   return res.status(400).send(err.message)
-// }
-// };
